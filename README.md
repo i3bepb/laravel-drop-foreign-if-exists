@@ -2,6 +2,8 @@
 
 Add method dropForeignIfExists in Blueprint for Postgresql. 
 
+This package is no longer maintained. No further compatibility updates are planned.
+
 # Support Policy
 
 | Package Version | Laravel Version |
@@ -9,6 +11,14 @@ Add method dropForeignIfExists in Blueprint for Postgresql.
 |        1        |        9        |
 |        1        |        8        |
 |   not support   |       <=7       |
+
+The final compatibility limits are PHP `>=7.4 <8.2` and Illuminate 8.x or 9.x.
+PHP 8.2+ and Illuminate / Laravel 10+ are
+excluded by the Composer requirements.
+
+These restrictions apply only to versions containing the updated requirements;
+previously published releases retain their original constraints. The abandoned
+status is a maintenance notice and does not prevent installation.
 
 # Testing
 
