@@ -9,11 +9,11 @@ jobs:
   test-laravel8-php74:
     runs-on: ubuntu-latest
     steps:
-      - run: docker pull i3bepb/php-for-test:1.2.3-php-7.4.33-cli-alpine3.16
+      - run: docker pull i3bepb/php-for-test:1.2.6-php-7.4.33-cli-alpine3.16
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: docker run --rm -v $(pwd):/home/www-data/application i3bepb/php-for-test:1.2.3-php-7.4.33-cli-alpine3.16 composer install
-      - run: docker run --rm -v $(pwd):/home/www-data/application i3bepb/php-for-test:1.2.3-php-7.4.33-cli-alpine3.16 php vendor/bin/testbench package:test --do-not-cache-result
+      - run: docker run --rm -v $(pwd):/home/www-data/application i3bepb/php-for-test:1.2.6-php-7.4.33-cli-alpine3.16 composer install
+      - run: docker run --rm -v $(pwd):/home/www-data/application i3bepb/php-for-test:1.2.6-php-7.4.33-cli-alpine3.16 php vendor/bin/testbench package:test --do-not-cache-result
   test-laravel8-php80:
     runs-on: ubuntu-latest
     steps:
